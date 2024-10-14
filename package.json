@@ -1,0 +1,13 @@
+{
+	"name": "flipkart-root",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "concurrently \"pnpm run backend\" \"pnpm run frontend\"",
+		"frontend": "node backend/server.js",
+		"backend": "cd frontend && pnpm run dev"
+	},
+	"private": true,
+	"devDependencies": {
+		"concurrently": "^9.0.1"
+	}
+}
